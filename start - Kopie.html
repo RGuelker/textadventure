@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Ein dunkler Wald</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.8;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+      color: #ffdd57;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      animation: slideUp 1.5s ease-out;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+    }
+    a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ffdd57;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: #ffe88a;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ein dunkler Wald</h1>
+  <img src="images/wald.jpeg" alt="Dunkler Wald">
+  <p>Du erwachst allein in einem tiefen, von Nebel durchzogenen Wald. Die Baumkronen sind so dicht, dass kaum Licht auf den moosbedeckten Boden fällt. Das leise Rauschen des Windes mischt sich mit fernen, unheimlichen Geräuschen. Du erinnerst dich nicht, wie du hierhergekommen bist. Alles, was du siehst, sind zwei Pfade, die in entgegengesetzte Richtungen führen.</p>
+  <p>Willst du dem schmalen Pfad zur linken folgen, der an einer alten, halb verfallenen Hütte vorbeiführt? Oder wählst du den etwas breiteren Weg zur rechten, der in eine helle Lichtung zu führen scheint?</p>
+  <a href="weg_zur_huette.html">Folge dem schmalen Pfad zur Hütte</a>
+  <a href="weg_zur_lichtung.html">Wähle den Weg zur Lichtung</a>
+</body>
+</html>
